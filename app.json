@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "shop",
-    "slug": "shop",
+    "name": "ShopitUp",
+    "slug": "shopitup",
     "version": "1.0.0",
     "sdkVersion": "41.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,6 +22,8 @@
     },
     "android": {
       "useNextNotificationsApi": true
-    }
+    },
+    "description": "It is a Ecommerce mobile app particularly for buying and selling of products. ",
+    "githubUrl": "https://github.com/adityavartak07/Ecommerce-Shop-App.git"
   }
 }

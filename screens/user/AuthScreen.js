@@ -109,7 +109,7 @@ const AuthScreen = props => {
       keyboardVerticalOffset={50}
       style={styles.screen}
     >
-      <LinearGradient colors={['#ffedff', '#ffe3ff']} style={styles.gradient}>
+      <LinearGradient colors={['#ffa6a6', '#FF5757']} style={styles.gradient}>
         <Card style={styles.authContainer}>
           <ScrollView>
             <Input
@@ -182,7 +182,8 @@ const styles = StyleSheet.create({
     padding: 20
   },
   buttonContainer: {
-    marginTop: 10
+    marginTop: 10,
+    //color:'#FF5757'
   }
 });
 

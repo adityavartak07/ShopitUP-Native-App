@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import { useSelector, useDispatch } from 'react-redux';
-
+import {Camera} from 'expo-camera'
 import HeaderButton from '../../components/UI/HeaderButton';
 import * as productsActions from '../../store/actions/products';
 import Input from '../../components/UI/Input';
@@ -46,6 +46,7 @@ const EditProductScreen = props => {
   // const transformedData = JSON.parse(userData);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState();
+
 
   const prodId = props.route.params ? props.route.params.productId : null;
   const editedProduct = useSelector(state =>
@@ -156,6 +157,7 @@ const EditProductScreen = props => {
     >
       <ScrollView>
         <View style={styles.form}>
+        
           <Input
             id="title"
             label="Title"
@@ -180,6 +182,7 @@ const EditProductScreen = props => {
             initiallyValid={!!editedProduct}
             required
           />
+        
           {editedProduct ? null : (
             <Input
               id="price"
